@@ -1,4 +1,5 @@
 <template>
+
   <div class="hello">
     <!-- <h1>{{ msg }}</h1> -->
     
@@ -76,7 +77,7 @@ export default {
       console.log(data) 
       /*eslint-enable*/
 
-      axios({ method: "POST", url: "http://127.0.0.1:8090/calc", data: data, headers: {"content-type": "text/plain" } }).then(result => { 
+      axios({ method: "POST", url: "http://127.0.0.1:8090/v1/customer/calc", data: data, headers: {"content-type": "text/plain" } }).then(result => { 
           // this.response = result.data;
           this.add = result.data['add']
           this.mul = result.data['mul']

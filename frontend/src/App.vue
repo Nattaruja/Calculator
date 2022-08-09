@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <MainSidebar/>
+  <div class="page-content">
     <Calculator msg="Welcome to Your Vue.js App"/>
+  </div>
   </div>
 </template>
 
 <script>
 import Calculator from './components/Calculator.vue'
+import './App.css';
+import MainSidebar from './components/MainSidebar.vue'
+
 
 export default {
   name: 'app',
   components: {
-    Calculator
+    Calculator,
+    MainSidebar,
   }
 }
 </script>
